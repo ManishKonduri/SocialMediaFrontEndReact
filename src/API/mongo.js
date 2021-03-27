@@ -2,7 +2,7 @@ import axios from 'axios';
 
 export const userRegistration = async (userData) => {
     const resp = async () => {
-        const data = await axios.post('https://social-media-backend-node.herokuapp.com/', userData);
+        const data = await axios.post('http://localhost:4000/', userData);
         return data;
     }
     return await resp();
@@ -11,7 +11,7 @@ export const userRegistration = async (userData) => {
 
 export const userLogin = async (userData) => {
     const resp = async () => {
-        const data = await axios.post("https://social-media-backend-node.herokuapp.com/login", userData);
+        const data = await axios.post("http://localhost:4000/login", userData);
         return data;
     }
     return await resp();
@@ -19,7 +19,7 @@ export const userLogin = async (userData) => {
 
 export const userUploadImg = async (userData) => {
     const resp = async () => {
-        const data = await axios.post("https://social-media-backend-node.herokuapp.com/home", userData);
+        const data = await axios.post("http://localhost:4000/home", userData);
         return data;
     }
     return await resp();
@@ -27,7 +27,7 @@ export const userUploadImg = async (userData) => {
 
 export const allUserImages = async () => {
     const resp = async () => {
-        const data = await axios.get("https://social-media-backend-node.herokuapp.com/imgs");
+        const data = await axios.get("http://localhost:4000/imgs");
         return data;
     }
     return await resp();
@@ -35,7 +35,7 @@ export const allUserImages = async () => {
 
 export const likesUpload = async (userData) => {
     const resp = async() => {
-        const data = await axios.post("https://social-media-backend-node.herokuapp.com/likes", userData);
+        const data = await axios.post("http://localhost:4000/likes", userData);
         return data;
     }
     return await resp();
@@ -43,7 +43,7 @@ export const likesUpload = async (userData) => {
 
 export const editProfile = async (userData) => {
     const resp = async() => {
-        const data = await axios.put("https://social-media-backend-node.herokuapp.com/edit", userData);
+        const data = await axios.put("http://localhost:4000/edit", userData);
         return data;
     }
     return resp();
@@ -51,7 +51,7 @@ export const editProfile = async (userData) => {
 
 export const updatePage = async (userData) => {
     const resp = async() => {
-        const data = await axios.post("https://social-media-backend-node.herokuapp.com/update", userData);
+        const data = await axios.post("http://localhost:4000/update", userData);
        
         return data;
     }

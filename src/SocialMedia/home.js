@@ -94,7 +94,7 @@ function Home(props) {
                 'image' : image
             }
     
-            axios.post("https://social-media-backend-node.herokuapp.com/home", data).then(res => setNewImg(res.data));
+            axios.post("http://localhost:4000/home", data).then(res => setNewImg(res.data));
             console.log(image);
         } catch(err) {
             console.log(err);

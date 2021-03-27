@@ -147,11 +147,7 @@ export default function PrimarySearchAppBar({ sendDataToParent, sendUploadHandle
     >
       <MenuItem onClick={() => handleMenuClose("profile")}>Profile</MenuItem>
       <MenuItem onClick={() => handleMenuClose("settings")}>My account</MenuItem>
-<<<<<<< HEAD
-      { userId == undefined || userId.length>0 ? <MenuItem onClick={() => handleMenuClose("logout")}>Log Out</MenuItem> : <MenuItem onClick={() => handleMenuClose("login")}>Log In</MenuItem>}
-=======
       { userId.length>0 ? <MenuItem onClick={() => handleMenuClose("logout")}>Log Out</MenuItem> : <MenuItem onClick={() => handleMenuClose("login")}>Log In</MenuItem>}
->>>>>>> 67255a783c9ab5b5960479ec617d1e9233c8c477
     </Menu>
   );
   // history.location.pathname == "/settings"
@@ -241,11 +237,7 @@ export default function PrimarySearchAppBar({ sendDataToParent, sendUploadHandle
           <div className={classes.grow} />
           <div className={classes.sectionDesktop}>
             <div>
-<<<<<<< HEAD
-              { userId==undefined || userId.length > 0 ? 
-=======
               {userId.length > 0 ? 
->>>>>>> 67255a783c9ab5b5960479ec617d1e9233c8c477
             <div>
             <input
               accept="image/*"
