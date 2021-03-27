@@ -77,7 +77,7 @@ function Profile(props) {
             'image' : image
         }
 
-        axios.post("http://localhost:4000/home", data).then(res => setNewImg(res.data));
+        axios.post("https://social-media-backend-node.herokuapp.com/home", data).then(res => setNewImg(res.data));
         props.history.push("/home")
         
     } catch(err) {
