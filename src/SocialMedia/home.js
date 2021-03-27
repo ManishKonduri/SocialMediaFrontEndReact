@@ -190,6 +190,7 @@ function Home(props) {
         const classes = useStyles();
         if (data.length > 0) {
             const dataImages = data.map((image, index) => {
+                if (image != undefined) {
                 if (likes.length > 0) {
                     var date = new Date(image.createdAt)
 
@@ -249,6 +250,7 @@ function Home(props) {
 
                     );
                 }
+    }
 
             });
 
